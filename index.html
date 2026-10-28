@@ -325,6 +325,13 @@
   .report-row{ display:grid; grid-template-columns:70px 1fr auto; gap:16px; align-items:baseline; padding:16px 0; border-bottom:1px solid var(--line); }
   .report-row .code{ font-family:"Courier Prime",monospace; font-size:12px; color:var(--pen); }
   .report-row .meta{ font-family:"Courier Prime",monospace; font-size:12px; color:var(--ink-soft); white-space:nowrap; text-align:right; }
+  .chart-mini{ display:grid; grid-template-columns:repeat(12,1fr); gap:3px; margin:12px 0 6px; max-width:420px; font-family:"Courier Prime",monospace; font-size:11px; }
+  .chart-mini span{ text-align:center; padding:3px 0; border:1px solid var(--line); background:var(--paper); color:var(--ink-soft); }
+  .chart-mini .shot{ background:var(--slate); color:var(--paper); border-color:var(--slate); }
+  .chart-mini .added{ background:var(--paper-deep); color:var(--ink); border:1px dashed var(--ink); }
+  .chart-mini .omit{ color:var(--pen); text-decoration:line-through; border-color:var(--pen); }
+  .chart-legend{ font-family:"Courier Prime",monospace; font-size:11px; color:var(--ink-soft); display:flex; flex-wrap:wrap; gap:14px; }
+  .chart-legend i{ display:inline-block; width:10px; height:10px; margin-right:5px; vertical-align:-1px; border:1px solid var(--line); }
   .report-body{ font-size:15px; color:var(--ink); margin-top:4px; }
   .report-body ul{ margin:8px 0 0; padding-left:18px; }
   .report-body li{ margin:3px 0; color:var(--ink-soft); font-size:14px; }
@@ -384,7 +391,7 @@
         <div class="stat-label">Script supervisor credits</div>
       </div>
       <div>
-        <div class="stat-num">4 + 3</div>
+        <div class="stat-num">5 + 3</div>
         <div class="stat-label">Daily reports + wrap package</div>
       </div>
     </div>
@@ -489,11 +496,11 @@
         </div>
       </div>
       <div class="tag-wrap">
-        <span class="tag" tabindex="0">ScriptE Systems certified</span>
+        <span class="tag" tabindex="0">ScriptE Systems trained</span>
         <div class="tag-panel">
-          <p class="tag-panel-title">Certification</p>
+          <p class="tag-panel-title">Training</p>
           <ul>
-            <li>ScriptE Systems Certification Training — New York City (2015)</li>
+            <li>ScriptE Systems Training — New York City (2015)</li>
           </ul>
         </div>
       </div>
@@ -505,7 +512,7 @@
       <span class="mono">02</span>
       <h2>On set &amp; deliverables</h2>
     </div>
-    <p class="lede">At the end of every shooting day, production receives four Script Supervisor's Reports, built to be useful both on set and in post. At wrap, editorial receives three final documents.</p>
+    <p class="lede">At the end of every shooting day, production receives five Script Supervisor's Reports, built to be useful both on set and in post. At wrap, editorial receives three final documents.</p>
 
     <h3 class="sub-head">On set <span>— the fundamentals, always covered</span></h3>
     <div class="credit-log">
@@ -560,6 +567,17 @@
           <div class="report-body">Only the selected takes — a full day of coverage narrowed to the best dozen or so. Cuts dailies review time during production and gives editorial a clear starting point for the first assembly.</div>
         </div>
         <span class="meta">~3 pp / day</span>
+      </div>
+      <div class="report-row">
+        <span class="code">D.05</span>
+        <div>
+          <span class="credit-title">Daily Scene Progress Chart</span>
+          <div class="report-body">A single page with every scene number in the script, color-coded: scenes already shot, scenes still to shoot, scenes added during production and scenes omitted. Pickups that come up on the day are noted at the bottom of the page. The director, the 1st AD and the scheduling team can see in one glance exactly where the shoot stands and plan the next day's call sheet around it.
+            <div class="chart-mini" aria-label="Example of the scene progress chart"><span class="shot">1</span><span class="shot">2</span><span class="shot">3</span><span class="shot">4</span><span class="shot">5</span><span>6</span><span class="shot">7</span><span class="shot">8</span><span class="shot">9</span><span class="added">9A</span><span>10</span><span class="omit">11</span><span class="shot">12</span><span>13</span><span class="shot">14</span><span class="shot">15</span><span class="shot">16</span><span class="shot">17</span><span>18</span><span>19</span><span class="shot">20</span><span class="shot">21</span><span class="shot">22</span><span>23</span><span>24</span><span>25</span><span class="omit">26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span>32</span><span>33</span><span>34</span><span>35</span></div>
+            <div class="chart-legend"><span><i style="background:var(--slate);border-color:var(--slate)"></i>Shot</span><span><i></i>To shoot</span><span><i style="background:var(--paper-deep);border:1px dashed var(--ink)"></i>Added</span><span><i style="border-color:var(--pen)"></i><s style="color:var(--pen)">Omitted</s></span></div>
+          </div>
+        </div>
+        <span class="meta">1 p / day</span>
       </div>
     </div>
 
